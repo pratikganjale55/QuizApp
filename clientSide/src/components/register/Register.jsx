@@ -21,8 +21,9 @@ const Register = () => {
           //  .then((res) => console.log(res.data))
           //  .catch((e) =>  console.log(e))
 
-          fetch("http://localhost:5000/register", {
+          fetch("/register", {
             headers : {
+              "access-control-allow-origin" : "*",
                 "Content-Type" : "application/json"
             },
             method : "POST" ,
@@ -38,13 +39,13 @@ const Register = () => {
   }
   return (
     <div>
-      <div className='loginPage'>
-      <div className="leftDiv">
+      <div className='registerPage'>
+      <div className="leftRegDiv">
         <img src="https://eliteweb.wrteam.in/images/login/login_img.webp" alt="" />
 
       </div>
       <div class="vl"></div>
-      <div className="rightDiv">
+      <div className="rightRegDiv">
       
 
       <main class="form-signin  m-auto mt-5 register">

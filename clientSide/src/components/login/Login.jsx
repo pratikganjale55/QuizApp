@@ -20,7 +20,7 @@ const Login = () => {
    let payload = JSON.stringify(login)
    console.log(payload)
       e.preventDefault() ;
-     await fetch("http://localhost:5000/login", {
+     await fetch("https://mernquiz12.herokuapp.com/login", {
          headers : {
            "Content-Type" : "application/json",
           //  'Access-Control-Allow-Credentials': 'true',
