@@ -1,0 +1,37 @@
+.homeContainer {
+     display: flex; 
+
+}
+.homeLeftDiv{
+    flex: 2;  
+}
+.homeRightDiv{
+    margin-top: 5%;
+    margin-right: 5%;
+    flex: 1;
+}
+.stroke_text1{
+    color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+-webkit-text-stroke-width : 1px ;
+-webkit-text-stroke-color : white ;
+}
+.text{
+    font-size: xx-large;
+    color:white;
+    -webkit-text-stroke-width : 1px ;
+    text-transform : uppercase;
+    
+}
+.regsiterButton{
+    background-color: #f48915;
+    width: 50%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.regsiterButton:hover {
+    border: 2px solid #361500;
+    background-color: #f1c08a;
+}

@@ -1,0 +1,27 @@
+.navbar_main{
+    display: flex;
+   /* border: 1px solid black; */
+   justify-content: space-between;
+   padding-top: 2%;
+}
+.header_menu{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.link {
+    cursor: pointer;
+    color: white;
+    padding-right: 2rem;
+    text-decoration: none;
+}
+.link:hover {
+    cursor: pointer;
+    color: #f48915;
+   
+    
+}
