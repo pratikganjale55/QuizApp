@@ -21,9 +21,12 @@ const Register = () => {
           //  .then((res) => console.log(res.data))
           //  .catch((e) =>  console.log(e))
 
-          fetch("/register", {
+          fetch("https://mighty-hollows-94981.herokuapp.com/register", {
             headers : {
               "access-control-allow-origin" : "*",
+              "access-control-allow-headers":  "*",
+              "access-control-allow-methods" : "*" ,
+
                 "Content-Type" : "application/json"
             },
             method : "POST" ,
@@ -34,7 +37,9 @@ const Register = () => {
             alert("Register Successfull")
             navigate("/login")
           })
-          .catch((e) => console.log(e))
+          .catch((e) => {
+            navigate("/login")
+            console.log(e)})
            
   }
   return (

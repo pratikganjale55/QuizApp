@@ -20,15 +20,14 @@ function App() {
     <Routes>
        <Route path="/" element={<Home/>}/>
        <Route path="/admin" element={
-        <PrivateContext>
+        
           <Admin/>
-        </PrivateContext>
        
        }/>
        <Route path="/quiz" element={
-        <PrivateContext>
+        
           <Quiz/>
-        </PrivateContext>
+        
        
        }/>
        <Route path="/login" element={<Login/>}/>

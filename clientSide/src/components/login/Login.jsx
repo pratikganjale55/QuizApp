@@ -20,7 +20,7 @@ const Login = () => {
    let payload = JSON.stringify(login)
    console.log(payload)
       e.preventDefault() ;
-     await fetch("https://mernquiz12.herokuapp.com/login", {
+     await fetch("https://mighty-hollows-94981.herokuapp.com/login", {
          headers : {
            "Content-Type" : "application/json",
           //  'Access-Control-Allow-Credentials': 'true',
@@ -49,7 +49,9 @@ const Login = () => {
            
          }
       })
-      .catch((e) => console.log(e))
+      .catch((e) => {
+        navigate("/")
+        console.log(e)})
  }
   return (
     <div className='loginPage'>
